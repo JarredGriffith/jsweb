@@ -1,0 +1,50 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::brfore, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    margin: 0; 
+    padding: 0;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: 300; // the thicknest of the font. 
+}
+
+.Flex {
+    display: flex;
+
+    &-jc-sb {
+       justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+//visisbility. 
+//hide for mobile view. 
+
+.hide_for_mobile {
+    // hide for table and mobel/ 
+    @include breakpoints-down(medium){
+        display: none;
+    }
+}
+
+.hide_for_desktop {
+    // hide for table and mobel/ 
+    @include breakpoints-up(large) {
+        display: none;
+    }
+}

@@ -1,0 +1,123 @@
+.header {
+
+    &.open { //the opening of the menu.
+        
+        .header__Hambuger {
+            >span:first-child { //first
+                transform: rotate(45deg);
+            }
+            >span:nth-child(2) { //middle
+                opacity: 0;
+            }
+            >span:last-child { //last
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+
+    .overlay { //backdrop overlay   when phone menu clicked
+        opacity: 0; // need this to be 0 for it dosent load with backdrop. 
+        position: fixed; 
+        top: 3.75rem; // for it dosent cover the nav. 
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(white,transparent);
+    
+    }
+
+    nav {
+         padding: 1.0625rem 1.5rem;
+        // padding-top: 1.0625rem;
+        // padding-bottom: 1.0625rem;
+    }
+
+    &__logo {
+        img {
+            width: 8.8125rem;
+            height:1.375rem
+        }
+    }
+
+    &__Hambuger { //mobile menu
+
+        span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: whitesmoke;
+            // background-color: $darkblue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px; //makes the x looks proper. 
+
+            &:not(:last-child){ //add to everything but that last line.
+                margin-bottom: 5px; //this is the space between the spans
+            }
+        }
+
+
+    }
+
+    &__menu {
+        background: white;
+        padding: 1.625rem;
+        margin: 1.5rem;
+        border-radius: 3px;
+        
+
+        a {
+            color: white;
+            padding: 0.625rem;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__links { //the a links on the nav bar. 
+        a {
+            position: relative;
+            text-decoration:none;
+            // font-size: $font-small; // adjusting font size of the nav bar.
+            color: whitesmoke;
+            transition: color 300ms ease-in-out; //when changing the color makes it smother.
+
+            &:not(:last-child){ // adds margin besides the last now. 
+                margin-right: 32px;
+            }
+
+            &::before{ // this is the line that shows up on a link. 
+                content: " ";
+                display: block;
+                position: absolute; 
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                //this for the green line under and the transition. 
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color:white; 
+                &::before { // effs the element before this so the before.
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+
+    &__cta {
+        // font-size: $font-small;
+        color: white;
+        //this makes the button white out alittle with hover. 
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+    }
+}
