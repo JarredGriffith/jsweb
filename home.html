@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
 <header class="header">
   <div class="overlay"></div>
     <nav class="Flex Flex-jc-sb Flex-ai-c container">
-        <h1>Jarred Kilbride</h1>
+        <h2>Jarred Kilbride</h2>
         <!-- <a href="/" class="header__logo"> Jarred Kilbride</a> -->
         <a href="#" id="btnhambuger" class="header__Hambuger hide_for_desktop">
           <span></span>
@@ -37,7 +38,7 @@
     </div>
 
 </header>  
-<div class="content-wrap">
+<div class="content-wrap row">
     <Div class="coverletter">
       <div class="test">
             <p>
@@ -47,10 +48,17 @@
     </Div>
     <br>
 </div>
-<div class="image container">
-  <img class="jphoto" src="./images/IMG_0953.JPG" alt="Jarred" srcset="">
-  <p>test is some text</p>
+<div class="image container row">
+  <div class="col-lg">
+    <p>test is some text 222</p>
+  </div>
+  <div class="col-lg">
+    <p>test is some text 222</p>
+  </div>
 </div>
+
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>
