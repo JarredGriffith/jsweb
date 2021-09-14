@@ -135,6 +135,10 @@ body.noscroll {
   }
 }
 
+.container {
+  padding: 1.0625rem 1.5rem;
+}
+
 .header.open .header__Hambuger > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -185,7 +189,7 @@ body.noscroll {
 }
 
 .header__menu {
-  background: rgba(59, 59, 59, 0.322);
+  background: rgba(255, 255, 255, 0.87);
   width: calc(100% - 4rem);
   position: absolute;
   padding: 1.625rem;
@@ -196,7 +200,7 @@ body.noscroll {
 }
 
 .header__menu a {
-  color: white;
+  color: black;
   padding: 0.625rem;
   display: block;
   text-align: center;
@@ -253,14 +257,30 @@ body.noscroll {
 }
 
 .coverletter {
-  height: 25rem;
+  height: 20rem;
   width: 75%;
   background-color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test {
+  margin-left: 1.0625rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.jphoto {
+  top: 0%;
+  width: 30%;
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

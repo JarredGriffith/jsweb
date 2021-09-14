@@ -5,16 +5,21 @@ const header = document.querySelector('.header')
 const overlay = document.querySelector('.overlay')
 const fadeEle = document.querySelectorAll('.has-fade')
 
+    //remove the menu drop down
+    const rmoveMenu = () => {
+                    //if it has the class open then it removes it.
+                    body.classList.remove("noscroll")
+                    header.classList.remove('open')
+                    fadeEle.forEach((e)=> {
+                        e.classList.remove('fade-in')
+                        e.classList.add('fade-out')
+                })
+            }
+
     btnhambuger.addEventListener('click',function(){ //closes
         //function checks to see if the element has class.
         if(header.classList.contains('open')){
-            //if it has the class open then it removes it.
-            body.classList.remove("noscroll")
-            header.classList.remove('open')
-            fadeEle.forEach((e)=> {
-                e.classList.remove('fade-in')
-                e.classList.add('fade-out')
-            })
+            rmoveMenu();
         }
         else {
             //else adds open class. 
@@ -26,5 +31,12 @@ const fadeEle = document.querySelectorAll('.has-fade')
                 
                 
             })
+        }
+    })
+
+    overlay.addEventListener("click",()=>{
+        console.log("test")
+        if(header.classList.contains('open')){
+            rmoveMenu();
         }
     })

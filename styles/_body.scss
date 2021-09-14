@@ -4,9 +4,29 @@
 }
 
 .coverletter {
-    height: 25rem;
+    height: 20rem;
     width: 75%;
     background-color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: flex-start;
+    display: flex;
+}
+
+.test {
+    margin-left: 1.0625rem;
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.jphoto {
+   // left: -0.00773165%;
+    top: 0%;
+    width: 30%;
+    height: 100%;
+    //position: absolute;
+
 }
