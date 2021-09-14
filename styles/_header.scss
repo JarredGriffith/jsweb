@@ -19,11 +19,11 @@
     .overlay { //backdrop overlay   when phone menu clicked
         opacity: 0; // need this to be 0 for it dosent load with backdrop. 
         position: fixed; 
-        top: 3.75rem; // for it dosent cover the nav. 
+        top: 4.75rem; // for it dosent cover the nav. 
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: linear-gradient(white,transparent);
+        background-image: linear-gradient(rgb(56, 56, 56),transparent);
     
     }
 
@@ -60,17 +60,21 @@
     }
 
     &__menu {
-        background: white;
+        background: rgba(59, 59, 59, 0.322);
+        width: calc(100% - 4rem);
+        position: absolute;
         padding: 1.625rem;
-        margin: 1.5rem;
+        //margin: 1.5rem;
         border-radius: 3px;
-        
+        left: 50%;
+        transform: translateX(-50%);
 
         a {
             color: white;
             padding: 0.625rem;
             display: block;
             text-align: center;
+            text-decoration:none;
         }
     }
 

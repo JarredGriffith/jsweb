@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -8,6 +12,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -22,13 +27,14 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -62,8 +68,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
 }
 
 html {
@@ -87,6 +93,10 @@ body {
   font-size: 1.125rem;
   line-height: 1.3;
   font-weight: 300;
+}
+
+body.noscroll {
+  overflow: hidden;
 }
 
 .Flex {
@@ -142,12 +152,12 @@ body {
 .header .overlay {
   opacity: 0;
   position: fixed;
-  top: 3.75rem;
+  top: 4.75rem;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(transparent));
-  background-image: linear-gradient(white, transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#383838), to(transparent));
+  background-image: linear-gradient(#383838, transparent);
 }
 
 .header nav {
@@ -175,10 +185,14 @@ body {
 }
 
 .header__menu {
-  background: white;
+  background: rgba(59, 59, 59, 0.322);
+  width: calc(100% - 4rem);
+  position: absolute;
   padding: 1.625rem;
-  margin: 1.5rem;
   border-radius: 3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header__menu a {
@@ -186,6 +200,7 @@ body {
   padding: 0.625rem;
   display: block;
   text-align: center;
+  text-decoration: none;
 }
 
 .header__links a {
@@ -240,7 +255,7 @@ body {
 .coverletter {
   height: 25rem;
   width: 75%;
-  background-color: #747474;
+  background-color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

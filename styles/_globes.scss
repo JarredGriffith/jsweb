@@ -16,6 +16,10 @@ body {
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: 300; // the thicknest of the font. 
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 .Flex {
