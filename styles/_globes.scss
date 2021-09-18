@@ -2,6 +2,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     box-sizing: border-box;
+        scroll-behavior: smooth;
 }
 *,*::brfore, *::after {
     box-sizing: inherit;
@@ -55,4 +56,8 @@ body {
 
 .container {
     padding: 1.0625rem 1.5rem;
+}
+
+.defualt {
+    height: 50rem;
 }
