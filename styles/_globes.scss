@@ -1,8 +1,8 @@
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     box-sizing: border-box;
-        scroll-behavior: smooth;
 }
 *,*::brfore, *::after {
     box-sizing: inherit;
@@ -60,4 +60,8 @@ body {
 
 .defualt {
     height: 50rem;
+}
+
+.coverPhoto {
+    width: 100%;
 }
