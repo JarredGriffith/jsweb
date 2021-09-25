@@ -1,8 +1,7 @@
 document.write(`
-
     <h1>test</h1>
 
-     <p>Front-End Software Development Mentor (Part-Time)                                                                                                                2021 - Present
+     <p>Front-End Software Development Mentor (Part-Time)</p>                                                                                                                2021 - Present
      Promineo Tech – Las Vegas                                                                                                                              
      •	Hold session once per week with each student as needed, to help troubleshoot their projects or assignments and solidify the concepts they are learning in class.
      •	Able to clearly express software development concepts in a manner that students can understand an able to effectively and efficiently troubleshoot errors.
