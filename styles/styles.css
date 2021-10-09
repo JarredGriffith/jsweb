@@ -314,4 +314,17 @@ body.noscroll {
 #history ul {
   margin-left: 3rem;
 }
+
+.card-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.card-style {
+  width: 40%;
+  margin: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
