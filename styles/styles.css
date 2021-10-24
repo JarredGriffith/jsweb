@@ -337,16 +337,25 @@ iframe {
 
 .footer {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .footer .logo {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  height: 10%;
-  width: 7%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 63.9375em) {
+  .logo-phone {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .logo-desktop {
+    width: 7%;
+  }
 }
 
 .work_header {
