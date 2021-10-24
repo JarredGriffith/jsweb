@@ -59,9 +59,13 @@ body {
 }
 
 .defualt {
-    height: 50rem;
+    height: 100%;
 }
 
 .coverPhoto {
     width: 100%;
+}
+
+iframe {
+    height: 15rem;
 }

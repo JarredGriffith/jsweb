@@ -141,11 +141,15 @@ body.noscroll {
 }
 
 .defualt {
-  height: 50rem;
+  height: 100%;
 }
 
 .coverPhoto {
   width: 100%;
+}
+
+iframe {
+  height: 15rem;
 }
 
 .header.open .header__Hambuger > span:first-child {
@@ -308,7 +312,6 @@ body.noscroll {
 }
 
 #history {
-  margin: 1.6rem 3.5rem;
   padding: .7rem;
   border-left: whitesmoke solid 4px;
 }
@@ -325,8 +328,6 @@ body.noscroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 1.6rem;
-  margin-right: 1.6rem;
 }
 
 .card-style {
