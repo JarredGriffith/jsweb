@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: whitesmoke;
+    background-color: $bg-white; 
+    color: $bg-dark; 
     margin: 0; 
     padding: 0;
     font-size: 1.125rem;

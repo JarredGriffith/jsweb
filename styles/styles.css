@@ -87,8 +87,8 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  color: whitesmoke;
+  background-color: #f6f9f6;
+  color: #273043;
   margin: 0;
   padding: 0;
   font-size: 1.125rem;
@@ -190,7 +190,7 @@ iframe {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: whitesmoke;
+  background-color: #273043;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   -webkit-transform-origin: 3px 1px;
@@ -223,7 +223,7 @@ iframe {
 .header__links a {
   position: relative;
   text-decoration: none;
-  color: whitesmoke;
+  color: #273043;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
@@ -263,65 +263,61 @@ iframe {
   opacity: 0.75;
 }
 
-.content-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.coverletter {
-  height: 20rem;
-  width: 75%;
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header .header-logo h2 {
+  color: #da6862;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #ed6e66, 0.005em 0.005em 0 #a65859, 0.01em 0.01em 0 #aa595a, 0.015em 0.015em #ae5a5b, 0.02em 0.02em 0 #b25c5b, 0.025em 0.025em 0 #b65d5c, 0.03em 0.03em 0 #bb5e5d, 0.035em 0.035em 0 #bf605e;
 }
 
 .coverPhoto {
+  width: 37.5rem;
   display: block;
+  border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.test {
-  margin-left: 1.4rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  font-size: 20px;
+.hero_top {
+  height: 50rem;
+  background-image: url("../images/hero/layered-waves-haikei.svg");
 }
 
-.image {
-  max-width: 100%;
-  height: auto;
+.hero {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
 }
 
-.jphoto {
-  top: 0%;
-  width: 30%;
-  height: 100%;
+.hero img {
+  width: 70%;
 }
 
-#projects {
-  background-color: whitesmoke;
-  color: black;
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  background-color: #f6f9f6;
+  -webkit-box-shadow: 0px 2px 15px 2px #8b8eaf;
+          box-shadow: 0px 2px 15px 2px #8b8eaf;
 }
 
-#projectHeader {
-  text-align: center;
+.bio h1 {
+  margin-bottom: 0.5rem;
 }
 
-#history {
-  padding: .7rem;
-  border-left: whitesmoke solid 4px;
-}
-
-#history h3 {
-  margin-left: .3rem;
-}
-
-#history ul {
-  margin-left: 3rem;
+.bio p {
+  line-height: 1.7rem;
+  padding: 0.3rem 0;
 }
 
 .card-center {
@@ -333,6 +329,77 @@ iframe {
 .card-style {
   width: 40%;
   margin: 20px;
+}
+
+.card {
+  background: radial-gradient(circle, #fa7268 50%, #fc466b 66%);
+  -webkit-box-shadow: 0px 3px 10px black;
+          box-shadow: 0px 3px 10px black;
+  padding-bottom: 15px;
+}
+
+.card-body {
+  margin: auto;
+  background-color: white;
+}
+
+.card-body span {
+  margin: 10px auto;
+  padding: 4px 10px;
+  background-color: #001220;
+  border: none;
+  border-radius: 5px;
+}
+
+.card-body span a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-img-top {
+  margin-top: 15px;
+}
+
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coverletter {
+  height: 20rem;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test {
+  margin-left: 1.4rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 20px;
+}
+
+#projects {
+  color: black;
+}
+
+#projectHeader {
+  text-align: center;
+}
+
+#history {
+  padding: 2.7rem;
+  border-left: #273043 solid 4px;
+}
+
+#history h3 {
+  margin-left: .3rem;
+}
+
+#history ul {
+  margin-left: 3rem;
 }
 
 .footer {
@@ -363,24 +430,25 @@ iframe {
   margin-top: 1rem;
 }
 
-#history {
-  margin-top: 4rem;
+#topskill {
+  background-color: #EAF1EA;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 3rem;
 }
 
 .skills img {
   width: 7rem;
   background-color: #fff;
+  background: radial-gradient(circle, #fa7268 0%, #fc466b 66%);
   border-radius: 11px;
-  -webkit-box-shadow: 0 3px 10px var(--secondary-shadow);
-          box-shadow: 0 3px 10px var(--secondary-shadow);
+  -webkit-box-shadow: 0px 3px 10px black;
+          box-shadow: 0px 3px 10px black;
   padding: 20px;
   margin: 10px;
 }

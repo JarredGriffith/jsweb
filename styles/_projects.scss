@@ -1,0 +1,37 @@
+
+.card-center {
+    align-items: center;
+}
+
+.card-style {
+    width: 40%;
+    margin: 20px;
+}
+
+.card {
+    background: radial-gradient(circle, rgba(250,114,104,1) 50%, rgba(252,70,107,1) 66%);
+    box-shadow: 0px 3px 10px black;
+    padding-bottom: 15px;
+}
+
+.card-body {
+    margin: auto;
+    background-color: white;
+
+    span {
+        margin: 10px auto;
+        padding: 4px 10px;
+        background-color: $ac-black;
+        border: none;
+        border-radius: 5px;
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.card-img-top {
+    margin-top: 15px;
+}

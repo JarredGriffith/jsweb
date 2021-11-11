@@ -1,5 +1,8 @@
 @import "./_Mixins.scss";
+@import './variables'; 
 @import "./_animations";
 @import "./_globes" ;
 @import "./_header.scss" ;
+@import "./hero"; 
+@import "./projects"; 
 @import "./_body.scss";

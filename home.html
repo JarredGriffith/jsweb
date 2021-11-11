@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -18,7 +19,9 @@
   <header class="header">
     <!-- <div class="overlay"></div> -->
     <nav class="Flex Flex-jc-sb Flex-ai-c">
-      <h2>Jarred Kilbride</h2>
+      <div class="header-logo">
+        <h2 class="name-logo">Jarred Kilbride</h2>
+      </div>
       <!-- <a href="/" class="header__logo"> Jarred Kilbride</a> -->
       <a href="#" id="btnhambuger" class="header__Hambuger hide_for_desktop">
         <span></span>
@@ -41,11 +44,8 @@
     </div>
 
   </header>
-  <div>
-    <img src="" alt="" srcset="">
-  </div>
-  <div class="content-wrap row">
-    <Div class="coverletter">
+  <!-- <div class="content-wrap row">
+    <!-- <Div class="coverletter">
       <div class="test">
         <p>
           Jarred Kilbride is a Front-End Software Developer. He specializes in working with JavaScript, React, CSS, and
@@ -53,75 +53,106 @@
           currently enrolled in the Front-End Software Development Bootcamp.
         </p>
       </div>
-    </Div>
-    <br>
+    </Div> -->
   </div>
-  <div>
-  </div>
-  <div class="image container row" id="about">
-    <div class="col-lg">
-      <img class="coverPhoto" src="./images/Photo.jpg" alt="" srcset="">
-    </div>
-    <div class="col-lg">
-      <h1>Jarred Kilbride</h1>
-      <p>I am a 27-year-old Las Vegas naive born and raised. Hobbies of mine are snowboarding and cars. </p>
-    </div>
-  </div>
-  <div class="skills">
-    <div><h3>My Top Skill</h3></div>
-    <div class="my-skill">
-      <div class="Logo__firstrow">
-        <img src="./images/Logos/icons8-javascript.svg" alt="JavaScript" srcset="">
-        <img src="./images/Logos/icons8-html-5-480.png" alt="HMTL" srcset="">
-        <img src="./images/Logos/icons8-css3-480.png" alt="CSS" srcset="">
+  <div class="hero_top Flex Flex-jc-sb Flex-ai-c">
+    <div class="hero row" id="about">
+      <div class=" col-lg ">
+        <img class="coverPhoto" src="./images/Photo.jpg" alt="" srcset="">
       </div>
-      <div class="Logo__secondrow">
-        <img src="./images/Logos/icons8-react-480-2.png" alt="REACT" srcset="">
-        <img src="./images/Logos/icons8-bootstrap-480.png" alt="Bootstrap" srcset="">
+      <div class="bio" class=" col-lg ">
+        <h1>Jarred Kilbride</h1>
+        <p>Front-End Software Developer. He specializes in working with JavaScript, React, CSS, and
+          HTML. Jarred is a Promineo Tech Bootcamp graduate. In his spare time, he works as a mentor to students
+          currently enrolled in the Front-End Software Development Bootcamp. </p>
+      </div>
+    </div>
+  </div>
+  <div id="topskill">
+    <div class="skills">
+      <div>
+        <h3>My Top Skills</h3>
+      </div>
+      <div class="my-skill">
+        <div class="Logo__firstrow">
+          <img src="./images/Logos/icons8-javascript.svg" alt="JavaScript" srcset="">
+          <img src="./images/Logos/icons8-html-5-480.png" alt="HMTL" srcset="">
+          <img src="./images/Logos/icons8-css3-480.png" alt="CSS" srcset="">
+        </div>
+        <div class="Logo__secondrow">
+          <img src="./images/Logos/icons8-react-480-2.png" alt="REACT" srcset="">
+          <img src="./images/Logos/icons8-bootstrap-480.png" alt="Bootstrap" srcset="">
+          <img src="./images/Logos/icons8-power-bi.svg" alt="Power BI" srcset="">
+          <img src="./images/Logos/icons8-vue-js.svg" alt="Vue" srcset="">
+        </div>
+
       </div>
 
     </div>
-
   </div>
   <div id="projects" class="defualt row">
-    <h1 id="projectHeader">Projects!</h1>
+    <h1 id="projectHeader">Some Of my Projects!</h1>
     <div class="card-center Flex Flex-jc-sb Flex-jc-c">
-    <div class="row">
-      <!--  -->
-      <div class="card col-lg card-style " style="width: 18rem;">
-        <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-        <iframe class="card-img-top" src="https://friendly-hugle-366c47.netlify.app" frameborder="0"><a href="https://friendly-hugle-366c47.netlify.app"></a></iframe>
-        <div class="card-body">
-          <p class="card-text">
-            weather API app.</p>
+      <div class="row">
+        <!--  -->
+        <div class="card col-lg card-style " style="width: 18rem;">
+          <img class="card-img-top" src="./images//Screen Shot 2021-11-04 at 6.26.21 AM.png" alt="Card image cap">
+          <div class="card-body Flex-ai-c">
+            <p class="card-text">Reaction app that tests your reaction time by display a box that you click, returns the time it took to
+              click the box.</p>
+            <!-- <button class="card-button"><a class="card-link" href="https://reverent-goldberg-fb2c94.netlify.app">Vue.js -->
+            <!-- Reaction App</a></button> -->
+            <div class="Flex Flex-jc-sb Flex-ai-c">
+              <span><a href="https://reverent-goldberg-fb2c94.netlify.app">View Live </a></span>
+              <span><a href="https://github.com/JarredKilbride/Vuereactionapp">View Github</a></span>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card col-lg card-style" style="width: 18rem;">
+          <img class="card-img-top" src="./images/doodleJump.png" alt="" srcset="">
+
+          <div class="card-body Flex-ai-c">
+            <p class="card-text">A copy of the poppler mobile app Doodle Jump. the doodle is control by arrows on the keyboard.</p>
+            <!-- <p class="card-text"> Doodle Jump Game</p> -->
+            <!-- <button class="card-button"><a class="card-link" href="https://brave-brown-a5440b.netlify.app">Doodle Jump
+                Game</a></button> -->
+                <div class="Flex Flex-jc-sb Flex-ai-c">
+                  <span><a href="https://brave-brown-a5440b.netlify.app">View Live </a></span>
+                  <span><a href="https://github.com/JarredKilbride/DoodleJump">View Github</a></span>
+                </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card col-lg card-style " style="width: 18rem;">
+          <img class="card-img-top" src="./images/jsbackground.png" alt="" srcset="">
+          <div class="card-body Flex-ai-c">
+            <button class="card-button"><a class="card-link" href="https://unruffled-hamilton-eab97b.netlify.app">Random
+                Background generator</a></button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card col-lg card-style " style="width: 18rem;">
+          <img class="card-img-top" src="./images/Vuetodo.png" alt="" srcset="">
+          <div class="card-body Flex-ai-c">
+            <button class="card-button"><a class="card-link" href="https://nostalgic-wing-969214.netlify.app">Vue.js To
+                Do App</a></button>
+          </div>
         </div>
       </div>
-      <!--  -->
-      <div class="card col-lg card-style" style="width: 18rem;">
-        <iframe class="card-img-top" src="https://brave-brown-a5440b.netlify.app" frameborder="0"><a href="https://brave-brown-a5440b.netlify.app"></a></iframe>
-        <div class="card-body">
-          <p class="card-text">Doodle Jump Game</p>
-        </div>
-      </div>
-      <!--  -->
-      <div class="card col-lg card-style " style="width: 18rem;">
-        <iframe width=100% height=100% class="card-img-top" src="https://unruffled-hamilton-eab97b.netlify.app" frameborder="0"><a href="https://brave-brown-a5440b.netlify.app"></a></iframe>
-        <div class="card-body">
-          <p class="card-text">JavaScript random background generator </p>
-        </div>
-      </div>
-    </div>
     </div>
     <div class="row footer">
       <h4>View more projects on my github!</h4>
-      <a href="https://github.com/JarredKilbride"><img class="logo logo-desktop logo-phone" src="./images/GitHub-Mark-120px-plus.png" alt="" srcset=""></a>
+      <a href="https://github.com/JarredKilbride"><img class="logo logo-desktop logo-phone"
+          src="./images/GitHub-Mark-120px-plus.png" alt="" srcset=""></a>
     </div>
+  </div>
   </div>
   <div id="work" class="defualt row">
     <h1 class="work_header">Work History</h1>
     <div id="history" class="row">
       <div class="row">
-        <h3>Front-End Software Development Mentor (Part-Time) :  2021 - Current</h3>
+        <h3>Front-End Software Development Mentor (Part-Time) : 2021 - Current</h3>
         <ul>
           <li>Hold session once per week with each student as needed, to help troubleshoot their projects or assignments
             and solidify the concepts they are learning in class.</li>
@@ -158,8 +189,12 @@
   </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
   <!-- <script src="./node_modules/jquery/dist/jquery.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
   <script src="./js/index.js"></script>
