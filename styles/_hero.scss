@@ -41,3 +41,23 @@
     line-height: 1.7rem;
     padding: 0.3rem 0;
   }
+
+  .hero-phone {
+    @include breakpoints-down(medium){
+      img{
+        width: 50%;
+      }
+
+      .bio {
+        width: 20rem; }
+  }
+    // hide for table and mobel/ 
+    @include breakpoints-down(small){
+        img{
+          width: 70%;
+        }
+
+        .bio {
+          width: 20rem; }
+    }
+}

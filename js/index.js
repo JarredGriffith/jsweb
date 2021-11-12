@@ -2,7 +2,7 @@ console.log("test")
 const btnhambuger = document.querySelector('#btnhambuger') //grabs the ham buger menu.
 const body = document.querySelector("body")
 const header = document.querySelector('.header')
-const overlay = document.querySelector('.overlay')
+const overlay = document.querySelector('.header__menu')
 const fadeEle = document.querySelectorAll('.has-fade')
 
     //remove the menu drop down
