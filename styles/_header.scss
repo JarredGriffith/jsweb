@@ -110,7 +110,7 @@
             }
 
             &:hover {
-                color:white; 
+                color:$ac-orange; 
                 &::before { // effs the element before this so the before.
                     opacity: 1;
                 }
